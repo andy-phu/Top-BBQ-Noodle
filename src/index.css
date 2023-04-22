@@ -8,3 +8,9 @@
     @apply border border-black rounded-xl px-5 py-1
   }
 }
+
+@media (max-width: 1000px) {
+  .sm-hidden {
+    display: none;
+  }
+}
