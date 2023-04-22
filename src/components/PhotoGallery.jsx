@@ -1,49 +1,66 @@
 import React from 'react';
-import topBBQNoodle from '../images/topBBQNoodle.jpeg'
-import topBBQWontons from '../images/topBBQWontons.jpeg'
+import topBBQFriedRice from '../images/topBBQFriedRice.jpeg';
+import topBBQCharSiu from '../images/topBBQCharSiu.jpeg';
+import topBBQPorkBelly from '../images/topBBQPorkBelly.jpeg';
+import topBBQShumai from '../images/topBBQShumai.jpeg';
+import topBBQChowFun from '../images/topBBQChowFun.jpeg';
+
 import { Carousel} from 'react-bootstrap';
 
 const PhotoGallery = () => {
     return (
-        <>
-            <Carousel>
-                <Carousel.Item interval={1000}>
-                    <img
-                    className="d-block w-100"
-                    src={topBBQNoodle}
-                    alt="First slide"
-                    />
-                    <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item interval={500}>
-                    <img
-                    className="d-block w-100"
-                    src={topBBQWontons}
-                    alt="Second slide"
-                    />
-                    <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                    className="d-block w-100"
-                    src="holder.js/800x400?text=Third slide&bg=20232a"
-                    alt="Third slide"
-                    />
-                    <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                    </p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
-        </>
+        <Carousel className='flex h-screen w-screen w-100 object-cover mb-0'>
+            <Carousel.Item interval={1000}>
+                <img className='h-screen w-screen'
+                className="d-block w-100"
+                src={topBBQCharSiu}
+                alt="First slide"
+                />
+                <Carousel.Caption>
+                    <h1 className='font-bold pb-4 relative'>CHAR SIU</h1>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item interval={500}>
+                <img className='h-screen w-screen'
+                className="d-block w-100"
+                src={topBBQPorkBelly}
+                alt="Second slide"
+                />
+                <Carousel.Caption>
+                    <h1 className='font-bold pb-4'>CRISPY PORK BELLY</h1>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img className='h-screen w-screen'
+                className="d-block w-100"
+                src={topBBQFriedRice}
+                alt="Third slide"
+                />
+                <Carousel.Caption>
+                    <h1 className='font-bold pb-4'>SHRIMP FRIED RICE</h1>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img className='h-screen w-screen'
+                className="d-block w-100"
+                src={topBBQShumai}
+                alt="Third slide"
+                />
+                <Carousel.Caption>
+                    <h1 className='font-bold pb-4'>SHU MAI</h1>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img className='h-screen w-screen'
+                className="d-block w-100"
+                src={topBBQChowFun}
+                alt="Third slide"
+                />
+                <Carousel.Caption>
+                    <h1 className='font-bold pb-4'>CHOWFUN</h1>
+                </Carousel.Caption>
+            </Carousel.Item>
+        </Carousel>
     );
 }
 

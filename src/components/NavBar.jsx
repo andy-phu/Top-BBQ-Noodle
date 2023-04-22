@@ -18,8 +18,8 @@ const Navbar = () => {
                 
                 <div className='flex justify-center items-center text-xl cursor-pointer text-white/70 '>
                     <p className='pr-8 sm-hidden '>HOME</p>
-                    <p className='pr-8 sm-hidden'> RESTARAUNT</p>  
-                    <img className='px-2 pr-6 opacity-80' src={topBBQLogo} />
+                    <p className='sm-hidden'> RESTARAUNT</p>  
+                    <img className='px-4 opacity-80' src={topBBQLogo} />
                     <p className='pr-8 sm-hidden'>MENU</p>  
                     <p className='pr-8 sm-hidden'>PHOTOS</p>  
 
@@ -38,7 +38,7 @@ const Navbar = () => {
                             <img src={topBBQLogo} />
                         </div>
                         
-                        <ul className='flex flex-col justify-center items-center h-screen '>
+                        <ul className='cursor-pointer  flex flex-col justify-center items-center h-screen '>
                             <li className='text-4xl pb-8 text-white/80 '>HOME</li>
                             <li className='text-4xl pb-8 text-white/80 flex-center'>RESTAURANT</li>
                             <li className='text-4xl pb-8 text-white/80'>MENU</li>
