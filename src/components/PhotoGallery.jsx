@@ -9,10 +9,11 @@ import { Carousel} from 'react-bootstrap';
 
 const PhotoGallery = () => {
     return (
-        <Carousel className='flex h-screen w-screen w-100 object-cover mb-0'>
+        <div id='photos'>
+            <Carousel className='flex h-screen w-screen w-100 mb-0'>
             <Carousel.Item interval={1000}>
-                <img className='h-screen w-screen'
-                className="d-block w-100"
+                <img 
+                className="d-block w-100  h-screen w-screen  object-cover"
                 src={topBBQCharSiu}
                 alt="First slide"
                 />
@@ -21,8 +22,8 @@ const PhotoGallery = () => {
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={500}>
-                <img className='h-screen w-screen'
-                className="d-block w-100"
+                <img 
+                className="d-block w-100 h-screen w-screen object-cover"
                 src={topBBQPorkBelly}
                 alt="Second slide"
                 />
@@ -31,8 +32,8 @@ const PhotoGallery = () => {
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-                <img className='h-screen w-screen'
-                className="d-block w-100"
+                <img 
+                className="d-block w-100 h-screen w-screen object-cover"
                 src={topBBQFriedRice}
                 alt="Third slide"
                 />
@@ -41,8 +42,8 @@ const PhotoGallery = () => {
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-                <img className='h-screen w-screen'
-                className="d-block w-100"
+                <img 
+                className="d-block w-100 h-screen w-screen object-cover"
                 src={topBBQShumai}
                 alt="Third slide"
                 />
@@ -51,8 +52,8 @@ const PhotoGallery = () => {
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-                <img className='h-screen w-screen'
-                className="d-block w-100"
+                <img 
+                className="d-block w-100 h-screen w-screen object-cover"
                 src={topBBQChowFun}
                 alt="Third slide"
                 />
@@ -60,7 +61,11 @@ const PhotoGallery = () => {
                     <h1 className='font-bold pb-4'>CHOWFUN</h1>
                 </Carousel.Caption>
             </Carousel.Item>
-        </Carousel>
+            </Carousel>
+            
+        </div>
+        
+        
     );
 }
 

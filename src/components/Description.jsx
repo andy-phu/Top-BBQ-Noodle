@@ -2,7 +2,7 @@ import React from 'react';
 
 const Description = () => {
     return (
-        <div className='py-12 flex items-center w-screen justify-center text-2xl'>
+        <div className='py-12 flex items-center w-screen justify-center text-2xl' id='restaurant'>
             <div className='flex flex-col ml-5 sm:flex-row sm:max-w-5xl justify-center text-base '>
                 <div className='text-lg flex grow-2 flex-col pr-14 font-bold '>
                     <h1 className=' font-bold pb-10 text-2xl' >A DESTINATION</h1>
