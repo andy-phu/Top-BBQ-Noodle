@@ -30,11 +30,11 @@ const Navbar = () => {
 
 
     return ( 
-        <div className={`flex justify-between items-center absolute top-8 z-50 w-full ${isShrunk ? 'top-0' : ''}`}>        
+        <div className={`flex justify-between items-center absolute top-20 z-50 w-full sm-top-0 `}>        
         {/*Top Menu*/}
-            <div className={`${bgColor} pt-20 mb-2 pb-2 ${isShrunk ? '' : ''} w-screen fixed `}>
-                <div className={`cursor-pointer flex absolute sm-left-2 sm-top-6 top-8 left-2 ${isShrunk ? ' ' : ''}`}>
-                    <AiOutlineMenu className='lg:hidden'style={style} size={30} onClick = {()=> setNav(!nav)}/>
+            <div className={`${bgColor} pt-0 pb-2 w-screen fixed ${isShrunk ? 'pt-2 pb-2 top-0' : 'top-2'}`}>
+                <div className={`cursor-pointer flex absolute top-0 pt-2 pl-2 pb-2`}>
+                    <AiOutlineMenu className='lg:hidden z-99' style={style} size={30} onClick = {()=> setNav(!nav)}/>
                 </div>
                 <div className='flex items-center justify-center w-full'>
                     
@@ -43,7 +43,7 @@ const Navbar = () => {
                         <Link to="restaurant" spy={true} smooth={true} offset={-400} duration={500} className={`pr-8 sm-hidden no-underline  text-white/70 ${isShrunk ? "text-sm pr-0 transition-all delay-300 ease-out" : ""}`}> RESTARAUNT</Link>  
 
                         <Link to="hero" spy={true} smooth={true} duration={500}  spy={true} smooth={true} offset={0} duration={500} className={`pr-8 sm-hidden no-underline  text-white/70  ${isShrunk ? "pr-0 transition-all delay-300 ease-out" : ""} `}>
-                            <img className={`opacity-80 z-99 ${isShrunk ? "scale-50 " : ""}`} src={topBBQLogo} />
+                            <img className={`opacity-80 z-99 ${isShrunk ? "scale-50 pb-2" : ""}`} src={topBBQLogo} />
                         </Link>
                         <Link to="menu" spy={true} smooth={true} offset={100} duration={500} className={`pr-8 sm-hidden no-underline  text-white/70 ${isShrunk ? "text-sm pr-4 transition-all delay-300 ease-out" : ""}`}>MENU</Link>  
                         <Link to="photos" spy={true} smooth={true} offset={100} duration={500} className={`pr-8 sm-hidden no-underline  text-white/70 ${isShrunk ? "text-sm pr-4 transition-all delay-300 ease-out" : ""}`}>PHOTOS</Link>  
