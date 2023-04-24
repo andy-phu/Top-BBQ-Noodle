@@ -38,8 +38,8 @@ const Navbar = () => {
     return ( 
         <div className={`flex justify-between items-center absolute top-24 z-50 w-full sm-top-0`}>        
         {/*Top Menu*/}
-            <div className={`${bgColor} pt-0 pb-2 w-screen fixed ${isShrunk ? 'sm:left-0 left-2 pt-2 pb-2 top-2 sm:top-0 mt-0 w-8 h-8 sm:w-screen sm:h-16' : 'top-2'} `}>
-                <div className={`cursor-pointer flex absolute top-0 pl-2 ${isShrunk ? 'pl-1 pr-0' : ''}`}>
+            <div className={`${bgColor} pt-0 pb-2 fixed ${isShrunk ? 'sm:left-0 left-2 pt-2 pb-2 top-2 sm:top-0 mt-0 sm:w-screen sm:h-16 w-8 h-8' : 'top-2 w-screen'} `}>
+                <div className={`cursor-pointer flex absolute top-0  ${isShrunk ? 'pl-1 pr-0' : 'pl-2'}`}>
                     <AiOutlineMenu className='lg:hidden z-99 pr-2' style={style} size={30} onClick = {()=> setNav(!nav)}/>
                 </div>
                 <div className='flex items-center justify-center w-full'>

@@ -12,6 +12,7 @@ function App() {
       <Hero/>
       <Description />
       <PhotoGallery/>
+      <Menu/>
     </div>
   );
 }
