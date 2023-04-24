@@ -51,7 +51,7 @@ const Navbar = () => {
                         <Link to="hero" spy={true} smooth={true} duration={500}  offset={0} className={`pr-8 sm-scale-50 no-underline  text-white/70  ${isShrunk ? "pr-0 transition-all delay-300 ease-out" : ""} `}>
                             <img className={`opacity-80 z-99 ${isShrunk ? "scale-0 sm:scale-50 pb-2 " : ""}`} src={topBBQLogo} />
                         </Link>
-                        <Link to="photos" spy={true} smooth={true} offset={100} duration={500} className={`pr-8 sm-hidden no-underline  text-white/70 hover:text-white/100 ${isShrunk ? "text-sm pr-4 transition-all delay-300 ease-out" : ""}`}>PHOTOS</Link>  
+                        <Link to="photos" spy={true} smooth={true} offset={0} duration={500} className={`pr-8 sm-hidden no-underline  text-white/70 hover:text-white/100 ${isShrunk ? "text-sm pr-4 transition-all delay-300 ease-out" : ""}`}>PHOTOS</Link>  
                         <Link to="menu" spy={true} smooth={true} offset={100} duration={500} className={`pr-8 sm-hidden no-underline  text-white/70 hover:text-white/100 ${isShrunk ? "text-sm pr-4 transition-all delay-300 ease-out" : ""}`}>MENU</Link>  
 
                     </div>

@@ -5,7 +5,7 @@ const Description = () => {
         <div className='py-12 flex items-center w-screen justify-center text-2xl' id='restaurant'>
             <div className='flex flex-col ml-5 sm:flex-row sm:max-w-5xl justify-center text-base '>
                 <div className='text-lg flex grow-2 flex-col pr-14 font-bold '>
-                    <h1 className=' font-bold pb-10 text-2xl' >A DESTINATION</h1>
+                    <h1 className=' font-bold pb-10 text-2xl ' >A DESTINATION</h1>
                     <p className='text-gray-400 font-bold pb-6'> Experience authentic and refined Chinese barbecue at our elegant restaurant. Our expert chefs use only the freshest and finest ingredients to create bold and nuanced flavors. Indulge in the art of Chinese barbecue and discover why our restaurant is the perfect destination for an exquisite dining experience. Join us for an unforgettable evening of exceptional cuisine and elevated ambiance.</p>
                 </div>
                 <div className=' flex grow flex-col w-full text-gray-400 '>
