@@ -15,50 +15,49 @@ const PhotoGallery = () => {
                 <img 
                 className="d-block w-100  h-screen w-screen  object-cover"
                 src={topBBQCharSiu}
-                alt="First slide"
+
                 />
                 <Carousel.Caption>
-                    <h1 className='font-bold pb-4 relative'>CHAR SIU</h1>
+                    <h1 className='font-bold '>CHAR SIU</h1>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={500}>
                 <img 
                 className="d-block w-100 h-screen w-screen object-cover"
                 src={topBBQPorkBelly}
-                alt="Second slide"
+
                 />
                 <Carousel.Caption>
-                    <h1 className='font-bold pb-4'>CRISPY PORK BELLY</h1>
+                    <h1 className='font-bold'>CRISPY PORK BELLY</h1>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img 
                 className="d-block w-100 h-screen w-screen object-cover"
                 src={topBBQFriedRice}
-                alt="Third slide"
+
                 />
                 <Carousel.Caption>
-                    <h1 className='font-bold pb-4'>SHRIMP FRIED RICE</h1>
+                    <h1 className='font-bold'>SHRIMP FRIED RICE</h1>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img 
                 className="d-block w-100 h-screen w-screen object-cover"
                 src={topBBQShumai}
-                alt="Third slide"
                 />
                 <Carousel.Caption>
-                    <h1 className='font-bold pb-4'>SHU MAI</h1>
+                    <h1 className='font-bold'>SHU MAI</h1>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img 
                 className="d-block w-100 h-screen w-screen object-cover"
                 src={topBBQChowFun}
-                alt="Third slide"
+
                 />
                 <Carousel.Caption>
-                    <h1 className='font-bold pb-4'>CHOWFUN</h1>
+                    <h1 className='font-bold'>CHOW FUN</h1>
                 </Carousel.Caption>
             </Carousel.Item>
             </Carousel>

@@ -52,7 +52,7 @@ const Navbar = () => {
                             <img className={`opacity-80 z-99 ${isShrunk ? "scale-0 sm:scale-50 pb-2 " : ""}`} src={topBBQLogo} />
                         </Link>
                         <Link to="photos" spy={true} smooth={true} offset={0} duration={500} className={`pr-8 sm-hidden no-underline  text-white/70 hover:text-white/100 ${isShrunk ? "text-sm pr-4 transition-all delay-300 ease-out" : ""}`}>PHOTOS</Link>  
-                        <Link to="menu" spy={true} smooth={true} offset={100} duration={500} className={`pr-8 sm-hidden no-underline  text-white/70 hover:text-white/100 ${isShrunk ? "text-sm pr-4 transition-all delay-300 ease-out" : ""}`}>MENU</Link>  
+                        <Link to="menu" spy={true} smooth={true} offset={-50} duration={500} className={`pr-8 sm-hidden no-underline  text-white/70 hover:text-white/100 ${isShrunk ? "text-sm pr-4 transition-all delay-300 ease-out" : ""}`}>MENU</Link>  
 
                     </div>
                 </div>
@@ -75,7 +75,7 @@ const Navbar = () => {
                             <Link onClick = {()=> setNav(!nav)} to="hero" spy={true} smooth={true} duration={500}  spy={true} smooth={true} offset={0} duration={500} className='text-4xl pb-8 text-white/80 flex-center no-underline' > HOME</Link>
                             <Link onClick = {()=> setNav(!nav)} to="restaurant" spy={true} smooth={true} duration={500}  spy={true} smooth={true} offset={0} duration={500} className='text-4xl pb-8 text-white/80 flex-center no-underline' > RESTAURANT</Link>
                             <Link onClick = {()=> setNav(!nav)} to="photos" spy={true} smooth={true} duration={500}  spy={true} smooth={true} offset={0} duration={500} className='text-4xl pb-8 text-white/80 flex-center no-underline' > PHOTOS</Link>
-                            <Link onClick = {()=> setNav(!nav)} to="menu" spy={true} smooth={true} duration={500}  spy={true} smooth={true} offset={0} duration={500} className='text-4xl pb-8 text-white/80 flex-center no-underline' > MENU</Link>
+                            <Link onClick = {()=> setNav(!nav)} to="menu" spy={true} smooth={true} offset={50} duration={500}  spy={true} smooth={true} offset={0} duration={500} className='text-4xl pb-8 text-white/80 flex-center no-underline' > MENU</Link>
 
                          
 

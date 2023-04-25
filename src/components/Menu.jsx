@@ -10,7 +10,9 @@ const Menu = (props) => {
         "hot dishes": "hotDishes-section",
         "stir fry": "stirFry-section",
         "noodle soup": "noodleSoup-section",
-        "bbq" : "bbq-section"
+        "bbq" : "bbq-section",
+        "dim sum": "dimsum-section",
+        "beverage" : "beverage-section"
     };
 
     const menuData ={
@@ -24,7 +26,7 @@ const Menu = (props) => {
         ],
         "seafood":[
             { name: "HOUSE SPECIAL LOBSTER", price: "MP", ingredients: "Lobster, Ginger, Scallions, Garlic, Soy Sauce"},
-            { name: "PAN FRIED CHILE CODE FISH", price: 31.99, ingredients:  "Cod Fish, Chili Peppers, Soy Sauce, Ginger, Garlic"},
+            { name: "PAN FRIED CHILE COD FISH", price: 31.99, ingredients:  "Cod Fish, Chili Peppers, Soy Sauce, Ginger, Garlic"},
             { name: "BRAISED SHRIMP WITH MAGGI SAUCE", price: 25.99, ingredients: "Shrimp, Maggi Sauce, Garlic, Soy Sauce, Sugar"},
             { name: "SALT AND PEPPER SHRIMP", price: 25.99, ingredients: "Shrimp, Salt, Black Pepper, Garlic, Scallions"},
             { name: "WALNUT SHRIMP", price: 25.99,ingredients: "Shrimp, Walnuts, Mayo, Honey, Sweetened Condensed Milk"},
@@ -62,6 +64,22 @@ const Menu = (props) => {
             { name: "ROAST DUCK", price: 32.99 , ingredients: "Duck, Honey, Soy Sauce, Ginger, Scallions"},
             { name: "CRISPY PORK BELLY", price: 20.99, ingredients: "Pork Belly, Soy Sauce, Rice Vinegar, Garlic, Sugar"}
         ],
+        "dim sum":[
+            { name: "HAR GOW", price: 6.25 , ingredients: "Shrimp, Bamboo Shoots, Water Chestnuts, Garlic, Ginger"},
+            { name: "SHU MAI", price: 6.25  , ingredients: "Ground Pork, Shrimp, Shiitake Mushrooms, Soy Sauce, Sesame Oil"},
+            { name: "STEAMED SPARERIBS", price: 5.75, ingredients: "Pork Spareribs, Black Bean Sauce, Garlic, Ginger, Rice Wine"},
+            { name: "CHICKEN FEET", price: 5.75 , ingredients: "Chicken Feet, Black Bean Sauce, Soy Sauce, Rice Wine, Sugar"},
+            { name: "CHAR-SIU BAO", price: 5.75 , ingredients: "Pork, Hoisin Sauce, Oyster Sauce, Soy Sauce, Sugar"},
+            { name: "XIAO LONG BAO", price: 5.50, ingredients: "Ground Pork, Soy Sauce, Rice Vinegar, Ginger, Garlic"}
+        ],
+        "beverage":[
+            { name: "BROWN SUGAR TEA W/ BOBA", price: 5.50, ingredients: "Brown Sugar, Black Tea, Tapioca Pearls, Milk, Ice"},
+            { name: "JASMINE MILK TEA", price: 5.50 , ingredients: "Jasmine Tea, Milk, Sugar, Ice, Tapioca Pearls"},
+            { name: "PASSION FRUIT GREEN TEA", price: 5.50, ingredients: "Passion Fruit Syrup, Green Tea, Sugar, Ice, Lemon"},
+            { name: "STRAWBERRY SMOOTHIE", price: 5.50, ingredients: "Strawberries, Milk, Sugar, Ice, Whipped Cream"},
+            { name: "VIETNAMESE COFFEE", price: 5.50 , ingredients: "Coffee, Condensed Milk, Ice, Water"},
+            { name: "DRY PLUM (XI MUOI)", price: 4.00, ingredients: "Pork Belly, Soy Sauce, Rice Vinegar, Garlic, Sugar"}
+        ],
        
         
     }
@@ -72,7 +90,7 @@ const Menu = (props) => {
 
     const sectionButtons = Object.keys(sectionMap).map((section) => (
         <button
-          className='border-0 text-gray-500'
+          className='border-0 text-gray-500 hover:font-bold' 
           key={section}
           onClick={() => handleClick(section)}
           style={{ textDecoration: underline === section ? "underline" : "none" }}
@@ -140,9 +158,9 @@ const Menu = (props) => {
             <div className=' justify-center pb-20 grid sm:flex'>
                 {sectionButtons}
             </div>
-            <div className='grid grid-cols-1 sm:grid-cols-2 sm:justify-items-center justify-start pl-6' >
-                <div className='lg:ml-80  pl-0 lg:pl-80'>{firstSectionDivs}</div>
-                <div className='lg:mr-80  pr-0 lg:pr-80'>{secondSectionDivs}</div>
+            <div className='grid grid-cols-1 sm:grid-cols-2 sm:justify-items-center justify-start pl-6 gap-2' >
+                <div className='lg:ml-62  pl-0 lg:pl-80'>{firstSectionDivs}</div>
+                <div className='lg:mr-62  pr-0 lg:pr-80'>{secondSectionDivs}</div>
             </div>
             
 
