@@ -22,7 +22,7 @@ const Navbar = () => {
             setBgColor('bg-black');
             setIsShrunk(true)
         } else {
-            setBgColor('bg-white');
+            setBgColor('bg-green');
             setIsShrunk(false)
         }
     };
