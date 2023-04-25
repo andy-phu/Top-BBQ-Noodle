@@ -158,9 +158,9 @@ const Menu = (props) => {
             <div className=' justify-center pb-20 grid sm:flex'>
                 {sectionButtons}
             </div>
-            <div className='grid grid-cols-1 sm:grid-cols-2 sm:justify-items-center justify-start pl-6 gap-2' >
-                <div className='lg:ml-62  pl-0 lg:pl-80'>{firstSectionDivs}</div>
-                <div className='lg:mr-62  pr-0 lg:pr-80'>{secondSectionDivs}</div>
+            <div className='grid grid-cols-1 sm:grid-cols-2 sm:justify-items-center justify-start pl-6 gap-8 sm:gap-4 lg:gap-0' >
+                <div className='lg:ml-62 ml-0 pl-0 lg:pl-80'>{firstSectionDivs}</div>
+                <div className='lg:mr-62 mr-0 pr-0 lg:pr-80'>{secondSectionDivs}</div>
             </div>
             
 

@@ -9,7 +9,7 @@ import BotFooter from './components/botFooter';
 
 function App() {
   return (
-    <div className='overflow-x-hidden '>
+    <div className='overflow-x-hidden font-raleway'>
       <Navbar />
       <Hero/>
       <Description />

@@ -17,7 +17,7 @@ const Footer = () => {
             <FaFacebookF className={`text-2xl transition-colors duration-300 text-white/80 hover:text-white hover:scale-75 transition:ease-in-out`} />
         </a>
         <a target='_blank' className='flex items-center justify-center w-10 h-10 rounded-full border-2 border-black' href='https://www.yelp.com/biz/top-bbq-and-noodle-gardena-2'>
-            <BsYelp className={`text-2xl duration-300 text-white/80 hover:text-white hover:scale-75 transition:ease-in-out`} />
+            <BsYelp className={`text-2xl ml-1 duration-300 text-white/80 hover:text-white hover:scale-75 transition:ease-in-out`} />
         </a>
       </div>
     </footer>
