@@ -15,7 +15,7 @@ const PhotoGallery = () => {
                 <img 
                 className="d-block w-100  h-screen w-screen  object-cover"
                 src={topBBQCharSiu}
-
+                alt='Char Siu Slide'
                 />
                 <Carousel.Caption>
                     <h1 className='font-bold '>CHAR SIU</h1>
@@ -25,7 +25,7 @@ const PhotoGallery = () => {
                 <img 
                 className="d-block w-100 h-screen w-screen object-cover"
                 src={topBBQPorkBelly}
-
+                alt='Crispy Pork Belly Slide'
                 />
                 <Carousel.Caption>
                     <h1 className='font-bold'>CRISPY PORK BELLY</h1>
@@ -35,6 +35,7 @@ const PhotoGallery = () => {
                 <img 
                 className="d-block w-100 h-screen w-screen object-cover"
                 src={topBBQFriedRice}
+                alt='Shrimp Fried Rice Slide'
 
                 />
                 <Carousel.Caption>
@@ -45,6 +46,7 @@ const PhotoGallery = () => {
                 <img 
                 className="d-block w-100 h-screen w-screen object-cover"
                 src={topBBQShumai}
+                alt='Shu Mai Slide'
                 />
                 <Carousel.Caption>
                     <h1 className='font-bold'>SHU MAI</h1>
@@ -54,7 +56,7 @@ const PhotoGallery = () => {
                 <img 
                 className="d-block w-100 h-screen w-screen object-cover"
                 src={topBBQChowFun}
-
+                alt='Chow Fun Slide'
                 />
                 <Carousel.Caption>
                     <h1 className='font-bold'>CHOW FUN</h1>

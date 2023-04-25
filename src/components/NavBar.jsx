@@ -49,7 +49,7 @@ const Navbar = () => {
                         <Link to="restaurant" spy={true} smooth={true} offset={-400} duration={500} className={`pr-8 sm-hidden no-underline  text-white/70 hover:text-white/100 ${isShrunk ? "text-sm pr-0 transition-all delay-300 ease-out" : ""}`}> RESTARAUNT</Link>  
 
                         <Link to="hero" spy={true} smooth={true} duration={500}  offset={0} className={`pr-8 sm-scale-50 no-underline  text-white/70  ${isShrunk ? "pr-0 transition-all delay-300 ease-out" : ""} `}>
-                            <img className={`opacity-80 z-99 ${isShrunk ? "scale-0 sm:scale-50 pb-2 " : ""}`} src={topBBQLogo} />
+                            <img className={`opacity-80 z-99 ${isShrunk ? "scale-0 sm:scale-50 pb-2 " : ""}`} src={topBBQLogo} alt="top bbq logo"/>
                         </Link>
                         <Link to="photos" spy={true} smooth={true} offset={0} duration={500} className={`pr-8 sm-hidden no-underline  text-white/70 hover:text-white/100 ${isShrunk ? "text-sm pr-4 transition-all delay-300 ease-out" : ""}`}>PHOTOS</Link>  
                         <Link to="menu" spy={true} smooth={true} offset={-50} duration={500} className={`pr-8 sm-hidden no-underline  text-white/70 hover:text-white/100 ${isShrunk ? "text-sm pr-4 transition-all delay-300 ease-out" : ""}`}>MENU</Link>  
@@ -68,17 +68,14 @@ const Navbar = () => {
                 <div className='bg-black/95 h-screen'>
                     <nav>
                         <div className='flex justify-center pt-6 '>
-                            <img src={topBBQLogo} />
+                            <img src={topBBQLogo}  alt="top bbq logo"/>
                         </div>
                         
                         <ul className='cursor-pointer  flex flex-col justify-center items-center h-screen '>
-                            <Link onClick = {()=> setNav(!nav)} to="hero" spy={true} smooth={true} duration={500}  spy={true} smooth={true} offset={0} duration={500} className='text-4xl pb-8 text-white/80 flex-center no-underline' > HOME</Link>
-                            <Link onClick = {()=> setNav(!nav)} to="restaurant" spy={true} smooth={true} duration={500}  spy={true} smooth={true} offset={0} duration={500} className='text-4xl pb-8 text-white/80 flex-center no-underline' > RESTAURANT</Link>
-                            <Link onClick = {()=> setNav(!nav)} to="photos" spy={true} smooth={true} duration={500}  spy={true} smooth={true} offset={0} duration={500} className='text-4xl pb-8 text-white/80 flex-center no-underline' > PHOTOS</Link>
-                            <Link onClick = {()=> setNav(!nav)} to="menu" spy={true} smooth={true} offset={50} duration={500}  spy={true} smooth={true} offset={0} duration={500} className='text-4xl pb-8 text-white/80 flex-center no-underline' > MENU</Link>
-
-                         
-
+                            <Link onClick = {()=> setNav(!nav)} to="hero" spy={true} smooth={true} duration={500} offset={0}  className='text-4xl pb-8 text-white/80 flex-center no-underline' > HOME</Link>
+                            <Link onClick = {()=> setNav(!nav)} to="restaurant" spy={true} smooth={true} duration={500}  offset={0}  className='text-4xl pb-8 text-white/80 flex-center no-underline' > RESTAURANT</Link>
+                            <Link onClick = {()=> setNav(!nav)} to="photos" spy={true} smooth={true} duration={500}   offset={0} className='text-4xl pb-8 text-white/80 flex-center no-underline' > PHOTOS</Link>
+                            <Link onClick = {()=> setNav(!nav)} to="menu" spy={true} smooth={true} offset={50} duration={500}   className='text-4xl pb-8 text-white/80 flex-center no-underline' > MENU</Link>
                         </ul>
                     </nav>
                 </div>

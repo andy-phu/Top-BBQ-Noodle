@@ -4,8 +4,6 @@ import { BsYelp} from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 
 const Footer = () => {
-  const style = {color:"white !important", opacity:"100%"}
-  const bStyle = {color:"black", opacity:"100%"}
 
   return (
     <footer className="bg-[black] text-white">
