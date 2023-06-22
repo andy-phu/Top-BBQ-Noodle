@@ -3,7 +3,7 @@ import topBBQNoodle from '../images/topBBQNoodle.jpeg'
 const Hero = () =>{
     return(
         <div  id='hero'  className='mx-auto h-screen'>
-            <div className='bg-green-500 h-full w-full h-screen relative' >
+            <div className='h-full w-full h-screen relative' >
                 {/*Overlay */}
                 <div className='absolute w-full h-full text-gray-200 bg-black/40 flex flex-col justify-center items-center h-screen' >
                     <h1 className='px-4 text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold pb-6'>TASTE THE</h1>

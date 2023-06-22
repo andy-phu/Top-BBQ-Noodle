@@ -46,7 +46,7 @@ const Navbar = () => {
                     
                     <div className={`flex justify-center items-center text-l cursor-pointer text-white/70 ${isShrunk ? 'h-10 py-6 transition-all ease-out delay-300' : 'h-24'}`}>
                         <Link to="hero" spy={true} smooth={true} duration={500}  offset={0} className={`pr-8 sm-hidden no-underline  text-white/70 hover:text-white/100 ${isShrunk ? "text-sm  pr-4 transition-all delay-300 ease-out" : ""}`}> HOME</Link>
-                        <Link to="restaurant" spy={true} smooth={true} offset={-400} duration={500} className={`pr-8 sm-hidden no-underline  text-white/70 hover:text-white/100 ${isShrunk ? "text-sm pr-0 transition-all delay-300 ease-out" : ""}`}> RESTARAUNT</Link>  
+                        <Link to="restaurant" spy={true} smooth={true} offset={-200} duration={500} className={`pr-8 sm-hidden no-underline  text-white/70 hover:text-white/100 ${isShrunk ? "text-sm pr-0 transition-all delay-300 ease-out" : ""}`}> RESTARAUNT</Link>  
 
                         <Link to="hero" spy={true} smooth={true} duration={500}  offset={0} className={`pr-8 sm-scale-50 no-underline  text-white/70   ${isShrunk ? "pr-0 transition-all delay-300 ease-out" : ""} `}>
                             <img className={`flex justify-center opacity-80 z-99 pl-8 sm:pl-0 ${isShrunk ? "scale-0 sm:scale-50 pb-2" : ""}`} src={topBBQLogo} alt="top bbq logo"/>
